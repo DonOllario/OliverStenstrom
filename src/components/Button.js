@@ -9,7 +9,7 @@ export const Button = styled(Link)`
     border-color: #14ffec;
     border-radius: 25px;
     minwidth: 100px;
-    max-width: 150px;
+    max-width: 180px;
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s;
@@ -17,9 +17,9 @@ export const Button = styled(Link)`
     justify-content: center;
     align-items: center;
     padding: ${({big}) => (big ? '16px 40px' : '14px 24px')};
-    color: ${({primary}) => (primary ? '#323232' : '#000d1a')};
-    font-size: ${({big}) => (big ? '20px' : '14px')};
-
+    color: ${({primary}) => (primary ? 'Black' : '#000d1a')};
+    font-size: ${({big}) => (big ? '24px' : '18px')};
+    font-weight: 700;
     &:hover{
         transform: translateY(-2px);
         background-color: Black;

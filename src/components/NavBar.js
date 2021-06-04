@@ -6,7 +6,7 @@ import { menuData } from '../data/MenuData';
 import { CgMenuRight } from 'react-icons/cg';
 
 const Nav = styled.nav`
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -31,6 +31,15 @@ const Logo = styled(Link)`
     color: #14ffec;
     height: 28px;
     font-size: 3.5rem;
+    position: relative;
+    top: 10px;
+    padding-left: 0;
+
+    p{
+        position: relative;
+        color: white;
+        font-size: 25px;
+    }
 `;
 
 const MenuBars = styled(CgMenuRight)`
@@ -52,8 +61,55 @@ const MenuBars = styled(CgMenuRight)`
 const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    ${'' /* margin-right: -48px; */}
+    
+    a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.1s, background-color 0.1s;
+    color: #fff;
+    }
+    a:hover {
+    color: #14ffec;
+    }
+    a:focus, a:active {
+    color: #14ffec;
+    }
 
+    a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: 3px;
+    width: 100%;
+    background-color: #14ffec;
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    transition: color 0.1s, -webkit-transform 0.2s ease-out;
+    transition: color 0.1s, transform 0.2s ease-out;
+    transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    }
+
+    a:active::before {
+    background-color: #14ffec;
+    }
+
+    a:hover::before,
+    a:focus::before {
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    }
+
+    
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -75,11 +131,11 @@ const NavMenuLinks = styled(Link)`
 //     }
 // `;
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
     return (
         <Nav>
-        <Logo to="/">O</Logo>
-        <MenuBars/>
+        <Logo to="/"><p>&#10100;&nbsp;</p>O<p>&nbsp;liver&nbsp;&#10101;</p></Logo>
+        <MenuBars onClick={toggle}/>
         <NavMenu>
             {menuData.map((item, index) => (
                 <NavMenuLinks to={item.link} key={index}>
