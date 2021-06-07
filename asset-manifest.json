@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/OliverStenstrom/static/css/main.36110d73.chunk.css",
+    "main.js": "/OliverStenstrom/static/js/main.c33d1621.chunk.js",
+    "main.js.map": "/OliverStenstrom/static/js/main.c33d1621.chunk.js.map",
+    "runtime-main.js": "/OliverStenstrom/static/js/runtime-main.f8d29b18.js",
+    "runtime-main.js.map": "/OliverStenstrom/static/js/runtime-main.f8d29b18.js.map",
+    "static/js/2.f59fa855.chunk.js": "/OliverStenstrom/static/js/2.f59fa855.chunk.js",
+    "static/js/2.f59fa855.chunk.js.map": "/OliverStenstrom/static/js/2.f59fa855.chunk.js.map",
+    "static/js/3.f26f323c.chunk.js": "/OliverStenstrom/static/js/3.f26f323c.chunk.js",
+    "static/js/3.f26f323c.chunk.js.map": "/OliverStenstrom/static/js/3.f26f323c.chunk.js.map",
+    "index.html": "/OliverStenstrom/index.html",
+    "static/css/main.36110d73.chunk.css.map": "/OliverStenstrom/static/css/main.36110d73.chunk.css.map",
+    "static/js/2.f59fa855.chunk.js.LICENSE.txt": "/OliverStenstrom/static/js/2.f59fa855.chunk.js.LICENSE.txt",
+    "static/media/Oliver Stenström CV.238a99fb.pdf": "/OliverStenstrom/static/media/Oliver Stenström CV.238a99fb.pdf",
+    "static/media/RoundedGlasses.8b20e852.png": "/OliverStenstrom/static/media/RoundedGlasses.8b20e852.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8d29b18.js",
+    "static/js/2.f59fa855.chunk.js",
+    "static/css/main.36110d73.chunk.css",
+    "static/js/main.c33d1621.chunk.js"
+  ]
+}
