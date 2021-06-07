@@ -2,8 +2,8 @@ import React from 'react'
 import styled, {css} from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
-// import { Button } from './Button';
 import { CgMenuRight } from 'react-icons/cg';
+import pdfFile from '../assets/Oliver Stenström CV.pdf';
 
 const Nav = styled.nav`
     height: 80px;
@@ -20,7 +20,6 @@ const NavLink = css `
     display: flex;
     align-items: center;
     padding: 0 1rem;
-    height: 100%;
     cursor: pointer;
     text-decoration: none;
 `
@@ -72,6 +71,7 @@ const NavMenu = styled.div`
     text-transform: uppercase;
     transition: color 0.1s, background-color 0.1s;
     color: #fff;
+    
     }
     a:hover {
     color: #14ffec;
@@ -142,6 +142,7 @@ const NavBar = ({ toggle }) => {
                     {item.title}
                 </NavMenuLinks>
             ))}
+            <a href={pdfFile} target="_blank" rel="noopener noreferrer" download="Oliver Stenström CV.pdf"> Download Resume </a>
         </NavMenu>
         {/* <NavBtn>
             <Button to="contact" primary="true">Contact Me</Button>

@@ -4,6 +4,11 @@ import NavBar from './components/NavBar';
 import GlobalStyle from './globalStyles';
 import './assets/fonts/font.css'
 import Dropdown from './components/Dropdown';
+import Footer from './components/Footer';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import ContactMe from './components/ContactMe';
 
 
 function App() {
@@ -15,10 +20,24 @@ function App() {
 
   return (
     <>
+    <Router>
     <GlobalStyle/>
     <NavBar toggle={toggle}/>
     <Dropdown isOpen={isOpen} toggle={toggle}/>
-    <Hero/>
+    <Switch>
+      <Route path ="/contact">
+        <ContactMe/>
+      </Route>
+      
+      <Route path="/">
+        <Hero/>
+        <Skills/>
+        <Projects/>
+      </Route>
+      </Switch>
+    
+    <Footer/>
+    </Router>
     </>
   );
 }

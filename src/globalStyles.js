@@ -7,10 +7,16 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Archivo', sans-serif;
+
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display:none;
+        }
     }
 
     html, body {
         overflow-x: hidden;
+        
     }
 `;
 
