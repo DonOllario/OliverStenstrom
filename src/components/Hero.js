@@ -6,7 +6,6 @@ import Typical from 'react-typical';
 
 const HeroSection = styled.section`
     height: 100vh;
-    max-height: 1277px;
     position: relative;
     overflow: hidden;
 `;
@@ -20,13 +19,13 @@ const HeroWrapper = styled.div`
     align-items: center;
     overflow: hidden;
     position: relative;
-    
+
     h2{
         position: relative;
         color: #eeeeee ;
         width: 22rem;
         top: 20rem;
-        right: 10%;
+        right: 20%;
 
         font-size: 2rem;
 
@@ -84,7 +83,6 @@ const HeroContent = styled.div`
     p {
         font-size: clamp(0.8rem, 5vw, 1.8rem);
         margin-bottom: 1.6rem;
-        
     }
     h4{
         color: #393e46;
@@ -130,7 +128,9 @@ const Hero = () => {
                 Contact Me
                 </Button>
                 </HeroContent>
+                <span>
                 <h2>“Everybody should learn to program a computer, because it teaches you how to think.”</h2>
+                </span>
             </HeroWrapper>
         </HeroSection>
     )
