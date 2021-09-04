@@ -42,15 +42,15 @@ const HeroWrapper = styled.div`
 const HeroImage = styled.img`
     position: absolute;
     top: 100px;
-    max-height:25rem;
-    max-width: 25rem;
+    max-height: 30vw;
+    max-width: 30vw;
     width: calc(100% - 100px);
     height: calc(100% - 100px);
     z-index: 10;
     border-radius: 100%;
     left: 55%;
 
-    @media screen and (max-width: 768px) {
+    ${'' /* @media screen and (max-width: 768px) {
         left: 25%;
         width: 15rem;
         height: 15rem;
@@ -59,7 +59,7 @@ const HeroImage = styled.img`
         left: 20%;
         width: 8rem;
         height: 8rem;
-    }
+    } */}
 `;
 
 
@@ -95,6 +95,8 @@ const HeroContent = styled.div`
 
 
 const Hero = () => {
+
+    
     return (
         <HeroSection>
             <HeroWrapper>
@@ -113,9 +115,11 @@ const Hero = () => {
                     1000,
                     ' <webdesigner>',
                     1000,
-                    ' 🎮gamer🎮',
+                    ' 🤝team player🤝',
                     1000,
-                    ' 🍜ramen-enthusiast🍜',
+                    ' 🎾sportsman🎾',
+                    1000,
+                    ' 🍜food-enthusiast🍜',
                     1000
                 ]}
                 />
@@ -123,7 +127,7 @@ const Hero = () => {
                 
                     
                 <Button 
-                to="contact" 
+                to="/contact" 
                 primary="true">
                 Contact Me
                 </Button>

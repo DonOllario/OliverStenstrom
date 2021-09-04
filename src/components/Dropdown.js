@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { menuData } from '../data/MenuData';
 import {Button} from './Button';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import {FaTimes} from 'react-icons/fa';
 
 const DropdownContainer = styled.div`
@@ -79,7 +79,7 @@ const Dropdown = ({isOpen, toggle}) => {
             <DropdownWrapper>
                 <DropdownMenu>
                     {menuData.map((item, index) => (
-                        <DropdownLink to={item.link} key={index}>
+                        <DropdownLink smooth to={item.link} key={index}>
                             {item.title}
                         </DropdownLink>
                     ))}

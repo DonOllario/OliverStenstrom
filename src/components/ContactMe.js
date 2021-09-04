@@ -22,18 +22,19 @@ const ContactMeSection = styled.div`
 const ContactMeTitle = styled.div`
     height: 15%;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 6vw;
     color: white;
     background-color: black;
     h4{
         color: #14ffec;
-        font-size: 2.5rem;
+        font-size: 3vw;
         margin: 0 0 15px;
     }
     h1{
-        
-        font-size: 4rem;
+        font-size: 4.5vw;
     }
+
+    
 `;
 
 const ContactMeWrapper = styled.div`
@@ -52,7 +53,7 @@ const ContactMeInfo = styled.div`
     background-color: #14ffec;
     border-radius: 15px;
     color: black;
-    padding: 40px;
+    padding: 4vw;
     flex: 0 1 40%;
     display: flex;
     flex-direction: column;
@@ -67,36 +68,47 @@ const ContactMeInfo = styled.div`
         width: 80%;
         color: #393e46;
     }
+    
     .icon-text{
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 25px 0;
+        padding: 2vw 0;
         span{
             font-size: 1.6vw;
             font-weight: 300;
         }
     }
+    @media screen and (max-width: 768px) {
+        width: 6rem;
+        height: 100%;
+
+    }
+    @media screen and (max-height: 850px) {
+        width: 6rem;
+        height: 100%;
+    }
 `;
 const ContactMeInfoPhone = styled(AiFillPhone)`
-    font-size: 2.2rem;
-    margin-right: 1.5rem;
-    flex: 0 0 40px;
+    font-size: 2.2vw;
+    margin-right: 1.5vw;
+    flex: 0 0 2vw;
 
 `;
 
 const ContactMeInfoMail = styled(AiFillMail)`
-    font-size: 2.2rem;
-    margin-right: 1.5rem;
-    flex: 0 0 40px;
+    font-size: 2.2vw;
+    margin-right: 1.5vw;
+    flex: 0 0 2vw;
 
 `;
 
 const ContactMeForm = styled.div`
     color: white;
     width: 100%;
+    overflow-y: auto;
     form{
-        padding: 40px;
+        padding: 4vw;
 
         .col {
             display: flex;
@@ -109,19 +121,19 @@ const ContactMeForm = styled.div`
             justify-content: flex-start;
             flex-direction: column;
             flex: 0 1 100%;
-            padding-right: 40px;
+            padding-right: 3vw;
             label{
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-                color: rgba(255,255,255,.6)
+                font-size: 1.5vw;
+                margin-bottom: 1vw;
+                color: rgba(255,255,255,.6);
             }
             input[type="text"], input[type="email"], textarea{
                 
                 border: none;
-                padding: 5px;
-                font-size: 1.5rem;
+                padding: 0.25vw;
+                font-size: 1.5vw;
                 font-weight: 300;
-                margin-bottom: 2rem;
+                margin-bottom: 2vw;
                 color: white;
                 background:transparent;
                 border-bottom: 2px solid rgba(255,255,255,.4);
@@ -129,7 +141,7 @@ const ContactMeForm = styled.div`
                 &:focus{
                     border: none;
                     outline: none;
-                    border-bottom: 2px solid #14ffec;
+                    border-bottom: 0.2vw solid #14ffec;
                     
                 }
             }
@@ -151,7 +163,7 @@ const ContactMeForm = styled.div`
                 align-items: center;
                 padding: ${({big}) => (big ? '16px 40px' : '14px 24px')};
                 color: ${({primary}) => (primary ? 'Black' : '#000d1a')};
-                font-size: ${({big}) => (big ? '24px' : '18px')};
+                font-size: ${({big}) => (big ? '24vw' : '18px')};
                 font-weight: 700;
                 &:hover{
                     transform: translateY(-2px);
@@ -175,6 +187,7 @@ const ContactMeForm = styled.div`
             }
         }
     }
+    
 `;
 
 

@@ -29,7 +29,7 @@ function App() {
         <ContactMe/>
       </Route>
       
-      <Route path="/">
+      <Route path="/OliverStenstrom/">
         <Hero/>
         <Skills/>
         <Projects/>

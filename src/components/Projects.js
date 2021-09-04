@@ -5,7 +5,8 @@ import styled from 'styled-components';
 const GitHubURL = 'https://api.github.com/users/DonOllario/repos';
 
 const ProjectsSection = styled.div`
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 15%;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -29,12 +30,12 @@ const ProjectsTitle = styled.div`
     color: Black;
     h4{
         color: #14ffec;
-        font-size: 2.5rem;
+        font-size: 3vw;
         margin: 0 0 15px;
     }
     h1{
         
-        font-size: 4rem;
+        font-size: 5vw;
     }
 `;
 
@@ -63,17 +64,17 @@ const ProjectCards = styled.div`
         color: #14ffec;
     }
     h1{
-        font-size: 25px;
+        font-size: 2vw;
         padding: 5px 0;
     }
     p{
+        font-size: 2vw;
     }
 `;
 
 
 
 const Projects = () => {
-
 
     const [projects, setProjects] = useState([]);
 
@@ -93,8 +94,8 @@ const Projects = () => {
             })
     },[]);
     return (
-        <ProjectsSection>
-            <ProjectsWrapper>
+        <ProjectsSection id="projects">
+            <ProjectsWrapper >
             <ProjectsTitle>
                     <h4>this is my</h4>
                     <h1>PROJECTS</h1>

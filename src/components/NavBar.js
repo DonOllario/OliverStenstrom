@@ -1,9 +1,9 @@
 import React from 'react'
 import styled, {css} from 'styled-components/macro';
-import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
 import { CgMenuRight } from 'react-icons/cg';
 import pdfFile from '../assets/Oliver Stenström CV.pdf';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Nav = styled.nav`
     height: 80px;
@@ -134,11 +134,11 @@ const NavMenuLinks = styled(Link)`
 const NavBar = ({ toggle }) => {
     return (
         <Nav>
-        <Logo to="/"><p>&#10100;&nbsp;</p>O<p>&nbsp;liver&nbsp;&#10101;</p></Logo>
+        <Logo to="/OliverStenstrom/"><p>&#10100;&nbsp;</p>O<p>&nbsp;liver&nbsp;&#10101;</p></Logo>
         <MenuBars onClick={toggle}/>
         <NavMenu>
             {menuData.map((item, index) => (
-                <NavMenuLinks to={item.link} key={index}>
+                <NavMenuLinks smooth to={item.link} key={index}>
                     {item.title}
                 </NavMenuLinks>
             ))}

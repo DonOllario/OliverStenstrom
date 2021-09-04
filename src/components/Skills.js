@@ -4,7 +4,8 @@ import SkillBar from 'react-skillbars';
 
 
 const SkillsSection = styled.div`
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 15%;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -20,10 +21,10 @@ const SkillsWrapper = styled.div`
     overflow: hidden;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 12rem;
+    margin-top: 12vw;
     h1{
-        font-size: 4rem;
-        margin-bottom: 8rem;
+        font-size: 5vw;
+        margin-bottom: 8vw;
     }
 `;
 
@@ -50,7 +51,7 @@ const colors = {
 
 const Skills = () => {
     return (
-        <SkillsSection>
+        <SkillsSection id ="skills">
             <SkillsWrapper>
                 <h1>Skills</h1>
                 <SkillBar skills={skills} colors={colors} height={'5vh'}/>
