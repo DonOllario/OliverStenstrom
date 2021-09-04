@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { menuData } from '../data/MenuData';
 import pdfFile from '../assets/Oliver Stenström CV.pdf';
 import {
@@ -203,7 +203,7 @@ const Footer = () => {
                </SocialContent>
                <FooterMenu>
                     {menuData.map((item, index) => (
-                            <FooterMenuLink to={item.link} key={index}>
+                            <FooterMenuLink smooth to={item.link} key={index}>
                                 {item.title}
                             </FooterMenuLink>
                         ))}

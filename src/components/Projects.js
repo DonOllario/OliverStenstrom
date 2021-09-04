@@ -30,12 +30,12 @@ const ProjectsTitle = styled.div`
     color: Black;
     h4{
         color: #14ffec;
-        font-size: 3vw;
+        font-size: 300%;
         margin: 0 0 15px;
     }
     h1{
         
-        font-size: 5vw;
+        font-size: 400%;
     }
 `;
 
@@ -64,11 +64,11 @@ const ProjectCards = styled.div`
         color: #14ffec;
     }
     h1{
-        font-size: 2vw;
+        font-size: 140%;
         padding: 5px 0;
     }
     p{
-        font-size: 2vw;
+        font-size: 120%;
     }
 `;
 
