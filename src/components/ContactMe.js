@@ -198,7 +198,7 @@ const ContactMe = () => {
     function sendEmail(e){
         e.preventDefault();
 
-    emailjs.sendForm('service_cki5ncd', 'template_wzx1xev', e.target, 'user_20A9VFFOcVD0HVuSUSOHH')
+    emailjs.sendForm('service_19dj5h5', 'template_wzx1xev', e.target, 'user_20A9VFFOcVD0HVuSUSOHH')
       .then((result) => {
           console.log(result.text);
       }, (error) => {

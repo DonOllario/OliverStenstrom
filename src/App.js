@@ -25,7 +25,7 @@ function App() {
     <NavBar toggle={toggle}/>
     <Dropdown isOpen={isOpen} toggle={toggle}/>
     <Switch>
-      <Route path ="/contact">
+      <Route path ="/OliverStenstrom/contact">
         <ContactMe/>
       </Route>
       
