@@ -92,7 +92,7 @@ const Hero = () => {
                  {renderTextLoopOnce}
                  </div>
                 <Button 
-                to="/contact" 
+                to="/OliverStenstrom/contact" 
                 primary="true">
                 Contact Me
                 </Button>
