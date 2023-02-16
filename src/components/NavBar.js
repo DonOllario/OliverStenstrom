@@ -52,7 +52,7 @@ const MenuBars = styled(CgMenuRight)`
     right: 0;
     transform: translate(-50%, 25%);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 793px) {
         display: block;
     }
 `;
@@ -110,7 +110,7 @@ const NavMenu = styled.div`
     }
 
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 793px) {
         display: none;
     }
 `;
@@ -118,18 +118,6 @@ const NavMenu = styled.div`
 const NavMenuLinks = styled(Link)`
     ${NavLink}
 `;
-
-
-// NavMenu Button
-// const NavBtn = styled.div`
-//     display: flex;
-//     align-items: center;
-//     margin-right: 24px;
-
-//     @media screen and (max-width: 768px) {
-//         display: none;
-//     }
-// `;
 
 const NavBar = ({ toggle }) => {
     return (
@@ -144,9 +132,6 @@ const NavBar = ({ toggle }) => {
             ))}
             <a href={pdfFile} target="_blank" rel="noopener noreferrer" download="Oliver Stenström CV.pdf"> Download Resume </a>
         </NavMenu>
-        {/* <NavBtn>
-            <Button to="contact" primary="true">Contact Me</Button>
-        </NavBtn> */}
         </Nav>
     )
 }

@@ -29,16 +29,15 @@ const SkillsWrapper = styled.div`
 `;
 
 const skills = [
-    {type: "C#", level: 75},
-    {type: "ASP.NET", level: 60},
-    {type: "JavaScript", level: 75},
-    {type: "HTML", level: 90},
-    {type: "CSS", level: 80},
-    {type: "Bootstrap", level: 70},
+    {type: "Azure/Cloud", level: 80},
+    {type: "DDD", level: 90},
+    {type: ".NET", level: 90},
+    {type: "C#", level: 90},
     {type: "React", level: 80},
+    {type: "JavaScript", level: 75},
+    {type: "Docker", level: 65},
     {type: "Git", level: 90},
     {type: "Scrum", level: 80}
-
 ];
 
 const colors = {

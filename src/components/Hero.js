@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import styled from 'styled-components/macro';
 import RoundedGlasses from '../assets/images/RoundedGlasses.png'
 import { Button } from './Button';
-import Typical from 'react-typical';
+import TextLoop from './TextLoop';
 
 const HeroSection = styled.section`
     height: 100vh;
@@ -49,17 +49,6 @@ const HeroImage = styled.img`
     z-index: 10;
     border-radius: 100%;
     left: 55%;
-
-    ${'' /* @media screen and (max-width: 768px) {
-        left: 25%;
-        width: 15rem;
-        height: 15rem;
-    }
-    @media screen and (max-height: 850px) {
-        left: 20%;
-        width: 8rem;
-        height: 8rem;
-    } */}
 `;
 
 
@@ -89,43 +78,19 @@ const HeroContent = styled.div`
     }
 `;
 
-
-
-
-
-
 const Hero = () => {
-
-    
+    const renderTextLoopOnce = useMemo(
+        () => TextLoop(),
+        []
+      );
     return (
         <HeroSection>
             <HeroWrapper>
                 <HeroImage src={RoundedGlasses} alt='here_i_am'/>
                 <HeroContent>
-                <h4>Hello there!👋 My name is</h4>
-                <h1>Oliver Stenström</h1>
-                <p>I'm a 
-                <Typical 
-                loop={Infinity}
-                wrapper="b" 
-                steps={[
-                    ' student',
-                    1000,
-                    ' {developer}',
-                    1000,
-                    ' <webdesigner>',
-                    1000,
-                    ' 🤝team player🤝',
-                    1000,
-                    ' 🎾sportsman🎾',
-                    1000,
-                    ' 🍜food-enthusiast🍜',
-                    1000
-                ]}
-                />
-                </p>
-                
-                    
+                <div className='textLoop'>
+                 {renderTextLoopOnce}
+                 </div>
                 <Button 
                 to="/contact" 
                 primary="true">

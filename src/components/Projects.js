@@ -44,7 +44,7 @@ const ProjectCards = styled.div`
     display: grid;
     border: solid;
     border-radius: 1%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
     padding: 100px 35px;
@@ -64,7 +64,7 @@ const ProjectCards = styled.div`
         color: #14ffec;
     }
     h1{
-        font-size: 140%;
+        font-size: 130%;
         padding: 5px 0;
     }
     p{
@@ -97,7 +97,7 @@ const Projects = () => {
         <ProjectsSection id="projects">
             <ProjectsWrapper >
             <ProjectsTitle>
-                    <h4>this is my</h4>
+                    <h4>these are my</h4>
                     <h1>PROJECTS</h1>
             </ProjectsTitle>
                 <ProjectCards>

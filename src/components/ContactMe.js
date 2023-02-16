@@ -75,7 +75,7 @@ const ContactMeInfo = styled.div`
         justify-content: flex-start;
         padding: 2vw 0;
         span{
-            font-size: 1.6vw;
+            font-size: 1.4vw;
             font-weight: 300;
         }
     }
@@ -108,7 +108,7 @@ const ContactMeForm = styled.div`
     width: 100%;
     overflow-y: auto;
     form{
-        padding: 4vw;
+        padding: 1vw 4vw;
 
         .col {
             display: flex;
@@ -121,7 +121,7 @@ const ContactMeForm = styled.div`
             justify-content: flex-start;
             flex-direction: column;
             flex: 0 1 100%;
-            padding-right: 3vw;
+            padding-right: 1vw;
             label{
                 font-size: 1.5vw;
                 margin-bottom: 1vw;
@@ -136,7 +136,8 @@ const ContactMeForm = styled.div`
                 margin-bottom: 2vw;
                 color: white;
                 background:transparent;
-                border-bottom: 2px solid rgba(255,255,255,.4);
+                resize: none;
+                border-bottom: 0.2vw solid rgba(255,255,255,.4);
                 transition: .3s all ease-in-out;
                 &:focus{
                     border: none;
@@ -161,7 +162,7 @@ const ContactMeForm = styled.div`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: ${({big}) => (big ? '16px 40px' : '14px 24px')};
+                padding: ${({big}) => (big ? '16px 40px' : '10px 12px')};
                 color: ${({primary}) => (primary ? 'Black' : '#000d1a')};
                 font-size: ${({big}) => (big ? '24vw' : '18px')};
                 font-weight: 700;
@@ -175,7 +176,7 @@ const ContactMeForm = styled.div`
             }
             &.right{
                 align-items: flex-end;
-                margin-top: 45px;
+                margin-top: 25px;
                 *{
                     color: #212121;
                     background-color: #14ffec;
@@ -185,9 +186,10 @@ const ContactMeForm = styled.div`
                     background-color: #212121;
                 }
             }
+            
         }
+        
     }
-    
 `;
 
 
@@ -213,11 +215,9 @@ const ContactMe = () => {
                 </ContactMeTitle>
             <ContactMeWrapper>
                 <ContactMeInfo>
-                    <h4>
-                    Contact Information
-                    </h4>
-                <p>I'd love to hear from you! <br/> Feel free to send me a message and i'll reply as soon as i can.</p>
-                <div className="actual-info">
+                    <h4> Contact Information </h4>
+                    <p>I'd love to hear from you! <br/> Feel free to send me a message and i'll reply as soon as i can.</p>
+                    <div className="actual-info">
                     <div className="icon-text">
                         <ContactMeInfoPhone/>
                         <span>+46733498227</span>
