@@ -37,7 +37,7 @@ const skills = [
     {type: "JavaScript", level: 75},
     {type: "Docker", level: 65},
     {type: "Git", level: 90},
-    {type: "Scrum", level: 80}
+    {type: "Scrum", level: 95}
 ];
 
 const colors = {

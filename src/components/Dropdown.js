@@ -89,7 +89,7 @@ const Dropdown = ({isOpen, toggle}) => {
                     primary='true' 
                     round='true'
                     big='true'
-                    to='/contact'
+                    to='/OliverStenstrom/contact'
                     >
                     Contact Me
                     </Button>
